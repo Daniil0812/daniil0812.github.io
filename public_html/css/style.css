@@ -1,0 +1,734 @@
+ /* Importing Amaranth Font for menu text */
+    @import url(http://fonts.googleapis.com/css?family=Amaranth);
+    @import url('https://fonts.googleapis.com/css?family=Roboto');
+    @import url('https://fonts.googleapis.com/css?family=Russo+One');
+    a{
+      outline: none;
+      text-decoration: none;
+    }
+
+    header, .titlenews{
+      transition: all .5s;
+      -moz-transition: all .5s; /* Firefox 4 */
+      -webkit-transition: all .5s; /* Safari and Chrome */
+      -o-transition: all .5s; /* Opera */
+    }
+
+    header a, img, li, ul 
+    {
+      transition: all .5s;
+      -moz-transition: all .5s; /* Firefox 4 */
+      -webkit-transition: all .5s; /* Safari and Chrome */
+      -o-transition: all .5s; /* Opera */
+    }
+    /* Basic layout */
+    body{
+      font-family: 'Roboto', sans-serif;
+      background-color: #393939;
+    }
+
+    .menu{
+      list-style-type: none;
+      float: right;
+      margin-right: 60px;
+      }
+
+    .menu li{
+      display: inline;
+      float: left;
+    }
+    .logo{
+      float: left;
+    }
+
+    nav{
+      width: 100%;
+      margin: 0 auto;
+    }
+
+  
+    header{
+      background: black;
+      float: left;
+      width: 100%;
+      position: fixed;
+      z-index: 10;
+    }
+
+      header a{
+        color: #fff;
+        text-decoration: none;
+        font-family: 'Russo One', sans-serif;
+        text-transform: uppercase;
+      }
+
+      header a:hover{
+        color: #0071c5;
+      }
+
+      header .menu li{
+        margin-right: 30px;
+      }
+
+      /* Sizes for the bigger menu */
+      header.large{
+        height: 100px;
+      }
+      header.large .list-menu{
+        margin-top:100px;
+      }
+
+      header.large .logo{
+        margin-top: 10px;
+        margin-left: 30px;
+        height: 80px;
+       }
+    
+
+      header.large .menu li{
+        margin-top: 45px;
+  
+      }
+      header.small .menu li{
+        margin-top: 17px;
+      }
+
+      /* Sizes for the smaller menu */
+      header.small{ 
+        height: 50px; 
+      }
+
+       header.small .list-menu{
+        margin-top:50px;
+      }
+
+      header.small #btn-menu + label{
+          margin-top: -23px;
+      }
+
+      header.small .logo{ 
+        margin-left: 30px;
+        height: 50px; 
+        
+      }
+
+      /*     content      */
+      .content{
+        width: 86%;
+        padding-top: 120px;
+        color: #fff;  
+        padding-left: 7%;
+        padding-right: 7%;
+      }
+      .new{
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        float: left;
+        margin-bottom: 10px;
+        margin-left: 10px;
+         overflow: hidden;
+      }
+       .new1{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        float: left;
+        margin-bottom: 10px;
+        margin-left: 10px;
+         overflow: hidden;
+      }
+      .new img,.new1 img{
+        transition: all .5s;
+        border-style: none;
+        width: 376px;
+        height: 250px;
+      }
+      .bignew{
+        margin-right: 10px;
+        height: 100%;
+        float: right;
+        width: 100%;
+        overflow: hidden;
+      }
+      .bignew img{
+        transition: all .5s;
+        border-style: none;
+        width: 100%;
+        height: 510px;
+      }
+      .newstext{
+      
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      right: 20px;
+      }
+      .tags{
+        background-color: #0071c5;
+        color: #fff;
+        padding: 3px;
+        font-size: 18px;
+      }
+      .titlenews{
+        size: 20px;
+        margin-top: 20px;
+        font-size: 1.5em;
+      }
+      .parent:hover .titlenews{
+        color: #0071c5;
+      }
+  
+
+      .parent:hover .bignew img,
+      .parent:focus .bignew img{
+       transform: scale(1.05);
+       opacity: 0.7;
+      }
+      .parent:hover .bignew,
+      .parent:focus .bignew{
+         overflow: hidden;
+      }
+     
+      .parent{
+        display: block;
+        overflow: hidden;
+        position: relative;
+        margin-right: 0.6%;
+        height: 510px;
+        float: right;
+        width: 65%;
+      }   
+      .parent1{
+        display: block;
+        overflow: hidden;
+        position: relative;
+        margin-right: 0.6%;
+        width: 32%;
+        height: 250px;
+        float: left;
+        margin-bottom: 10px;
+        margin-left: 0.6%;
+      }   
+     .parent1:hover .titlenews{
+        color: #0071c5;
+      }
+      .parent1:hover .new,
+      .parent1:focus .new,
+      .parent1:hover .new1,
+      .parent1:focus .new1{
+         overflow: hidden;
+      }
+  
+
+      .parent1:hover .new img,
+      .parent1:focus .new img,
+      .parent1:hover .new1 img,
+      .parent1:focus .new1 img{
+       transform: scale(1.05);
+       opacity: 0.7;
+      }
+    
+       .matchs{
+        margin-top: 10px;
+        width: 100%;
+        position: relative;
+        height: 350px;
+        float: left;
+      }
+      .match{
+        margin-left: 20px;
+        margin-right: 20px;
+        background-color: black;
+        height: 100%;
+          }
+      .line{
+        height: 50px;
+        width: 100%;
+        background-color: #232021;
+      }
+      .lineh1{
+        width:70%;
+        float: left;
+      }
+      .line h1{
+        float: left;
+        margin-top: 12px;
+        margin-left: 20px;
+        font-size: 25px;
+      }
+      .allmatchs{
+        float: right; 
+        margin-right: 20px;
+        font-size: 20px;
+      }
+      .allmatchs h1{
+        font-size: 20px;
+        margin-top: 15px;
+      }
+     .allmatchs a{
+      color: #fff;
+      transition: all 1s;
+      -moz-transition: all 1s; /* Firefox 4 */
+      -webkit-transition: all 1s; /* Safari and Chrome */
+      -o-transition: all 1s; /* Opera */
+     }
+       .allmatchs a:hover{
+      color: #0071c5;
+
+      }
+
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      height: 300px;
+      position: relative;
+      margin: auto;
+      overflow: hidden;
+
+    }
+    .slideshow-container img{
+     
+      border-style: none;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+        display: none;
+
+    }
+
+    /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: relative;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+    }
+
+    .prev{
+      float: left;
+    }
+    .next{
+      float: right;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {opacity: .4;} 
+      to {opacity: 1;}
+    }
+
+    @keyframes fade {
+      from {opacity: .4;} 
+      to {opacity: 1;}
+    }
+
+    #leftteam{
+      position: absolute;
+      margin-left: 150px;
+      margin-top:50px;
+      left: 0;
+    }
+    #leftteam img{
+       opacity: 0.6;
+     height: 150px;
+     width: 150px;
+    }
+    #leftteam h1{
+      margin-top: 15px;
+      text-align: center;
+      font-size: 20px;
+    }
+
+    #rightteam{
+      margin-top: 50px;
+      right: 0;
+      position: absolute;
+      margin-right: 150px;
+    }
+    #rightteam img{
+      opacity: 0.6;
+      height: 150px;
+     width: 150px;
+    }
+    #rightteam h1{
+      margin-top: 15px;
+      text-align: center;
+      font-size: 20px;
+    }
+    .info{
+      font-size: 17px;
+      margin-top: 80px;
+      position: absolute;
+      left: 50%;
+      width: 260px;
+      margin-left:-130px;
+      top: 0;
+      
+      text-align: center;
+    }
+    .info h2{
+      color: #828982;
+      margin-top: 10px;
+      font-size: 13px;
+      margin-bottom: 20px;
+    }
+    .info .big{
+      font-size: 27px;
+      color:#0071c5;
+    }
+    .lenta{
+      margin-top: 20px;
+      width: 100%;
+      float: left;
+
+    }
+    .lentas{
+      padding-bottom: 30px;
+      margin: 0 20px;
+      background-color: black;
+      overflow: hidden; 
+    }
+    .card-vertical{
+      float: left;
+      width: 30%;
+      height: auto;
+      background-color: #232021;
+      margin-top: 2.5%;
+      margin-left: 2.5%;
+    }
+    .card-vertical-right{
+      float: right;
+      width: 30%;
+      height: auto;
+      background-color: #232021;
+      margin-top: 2.5%;
+      margin-right: 2.5%;
+    }
+    .card-vertical-img{
+      position: relative;
+      height: auto ;
+      width: 100%;
+      overflow: hidden;
+    }
+    .card-vertical-img img{
+      height: auto;
+      width: 100%;
+    }
+    .text-block {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    font-size: 18px;
+    background-color: #0071c5;
+    color: white;
+    padding: 3px;
+    }   
+    .text-block a{
+    color: #fff;
+    }
+    .card-vertical-text{
+    margin-top: 3%;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #fff;
+    }
+    .card-vertical-text h1{
+      font-size: 21px;
+      line-height: 1.2;
+    }
+    .card-vertical-text p{
+      margin-top: 25px;
+      color:#848383;
+      font-size: 15px;
+      line-height: 1.3;
+    }
+    .card-vertical-time h1{
+      margin-top: 20px;
+      font-size: 21px;
+      margin-left: 5%;
+      color:  #0071c5;
+      margin-bottom: 5%;
+    }     
+
+
+    footer{
+     display: inline-block;
+      width: 86%;
+      margin-left: 7%;
+      margin-right: 7%; 
+      height: 200px;
+      
+    }
+    .footer{
+      width: auto;
+      height: 100%;
+      background-color: #232021;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    .block-copyright{
+       height: 100%;
+      width: auto;
+    }
+    
+    .block-copyright-nav{
+      float: left;
+      height: 100%;
+      width: 20%;
+    }
+    .block-copyright-nav h2{
+      position: relative;
+      color: #717686;
+      top: 80%;
+      left: 5%;
+    }
+    .background{
+      width: 100%;
+      height: 30%;
+      background-color: #292c36;
+    }
+    .block-menu{
+      text-align: center;
+      height: 160px;
+      width: 60%;
+      float: left;
+    }
+    .podmenu{
+      float: left;
+      width: 16%;
+    }
+    .podmenu h1{
+      font-family: 'Russo One', sans-serif;
+      margin-top: 20%;
+    }
+    .podmenu h1 a{
+       color: #fff;
+       transition: all 1s
+    }
+    .podmenu h1 a:hover{
+      ;
+       color: #0071c5 ;
+    }
+    
+    .bigtext{
+      font-size: 15px;
+    }
+    .block-img{
+      position: relative;
+      width: 33%;
+      height: auto;
+      float: left
+    }
+    .block-copyright-nav img{
+      position: relative;
+      margin-top: 15%;
+      left: 25%;
+      opacity: 0.5;
+      width: 50%;
+      height: auto;
+    }
+    .block-copyright-nav a:hover img{
+      opacity: 1;
+    }
+    .balls{
+      text-align:center;
+      margin-top:-40px; 
+      position: absolute;
+      left: 50%; 
+      margin-left:-27px;
+      width: 70px;
+    }
+    .list-menu{
+    width: 100%;
+    background-color: #232021;
+    position: absolute;
+    right: 0;
+    list-style: none;
+    display: none;
+    }
+    .list-menu li{
+      padding-top: 10px;
+      padding-bottom: 10px;
+      height: 20px;
+      z-index: 2;
+    }
+    .list-menu > li > a{
+      margin-left: 10px;
+      color: #fff;
+      text-decoration: none;
+      font-family: 'Russo One', sans-serif;
+      text-transform: uppercase;
+    }
+    .list-menu > li > a:hover{
+      color: #0071c5;
+    }
+
+    #btn-menu{
+      display: none;
+    }
+    #btn-menu + label{
+      position: absolute;
+      top:50%;
+      margin-top: -22px;
+      right: 20px;
+      float: right;
+      display: none; 
+      color: #fff; 
+      z-index: 1;
+      cursor: pointer;
+    }
+    #btn-menu + label:before{
+      content: '\f0c9';  
+      display: inline-block;
+      font-family:'FontAwesome';
+      font-size: 45px;
+    }
+    #btn-menu:checked + label:before{
+      content: '\f00d';
+      color: #f00;
+    }
+    @media screen and (max-width: 1240px) {
+      
+    .background,.podmenu{
+      display: none;
+    }
+      
+    }
+    @media screen and (max-width: 1190px) {
+      .menu{
+        display: none;
+      }
+
+      #btn-menu + label{
+          display: inline-block;
+       }
+      #btn-menu + label + .list-menu{
+        display: none;
+      }
+      #btn-menu:checked + label + .list-menu{
+        display: inline-block;
+      }
+      
+      .parent{
+       height: 444px;
+     }
+      .parent1{
+      height: 218px;
+      margin-bottom: 8px;
+      }
+
+
+    }
+    
+ @media screen and (max-width: 1000px)
+ {
+   .parent{
+    position: relative;
+    float: left;
+     width: 100%;
+     margin-left: 20px;
+     margin-bottom: 10px;
+   }
+   .parent1{
+    margin: 0;
+    width: 50%;
+    box-sizing: border-box;
+    display: inline-block;
+    padding-right: 20px;
+   }
+   .new, .new1{
+    margin: 0;
+   }
+   .new{
+    margin-left: 20px; 
+   }
+   .new img, .new1 img{
+    width: 100%;
+    height: auto;
+   }
+   .bignew{
+    margin-right: 40px;
+   }
+   .newstext{
+    width: 90%;
+   }
+ }
+
+
+ @media screen and (max-width: 1100px){
+          #leftteam{
+            margin-left:50px;
+          }
+          #rightteam{
+            margin-right: 50px;
+          }
+    
+        
+         }

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Cybersport Union</title>
+
+  <meta name="author" content="Antonio Pratas">
+  <link rel="stylesheet" type="text/css" href="http://meyerweb.com/eric/tools/css/reset/reset.css">
+  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="stylesheet" href="../../css/style.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"/>
+  
+</head>
+
+<body>
+
+  <header class="large">
+      <nav>
+        <img class="logo" src="../../images/wdd1.png"/>
+          <ul class="menu">
+            <li><a href="../../index.html">Новости</a></li>
+            <li><a href="../medias.html">Медиа</a></li>
+            <li><a href="#">События</a></li>
+            <li><a href="#">Направления</a></li>
+            <li><a href="#">Команды</a></li>
+            <li><a href="../../about/about.html">О клубе</a></li>
+          </ul>
+          <input type="checkbox" id="btn-menu" />
+          <label for="btn-menu"></label>
+          <ul class="list-menu">
+            <li><a href="../../index.html">Новости</a></li>
+            <li><a href="../medias.html">Медиа</a></li>
+            <li><a href="#">События</a></li>
+            <li><a href="#">Направления</a></li>
+            <li><a href="#">Команды</a></li>
+            <li><a href="../../about/about.html">О клубе</a></li>
+          </ul>
+      </nav>
+  </header>
+
+ <div class="content">
+    <div class="wrapper">
+      <div class="line">
+        <div class="lineh3">
+          <h3><a href="../../index.html">Новости</a></h3><h3>&#10095;</h3> <h3><a href="../medias.html">Медиа</a></h3><h3>&#10095;</h3><h3 id="lineh3-1">Открытое первенство Dota 2 Cyberpunk</h3>
+        </div>
+
+        
+      </div>
+    </div>
+  </div>
+
+
+
+   <footer>  
+  <div class="footer">
+      <div class="block-copyright-nav">
+        <h2>© 2018 MyShared Inc.  <br>  
+        All rights reserved.</h2>
+      </div>
+      <div class="block-menu">
+        <div class="background">
+          <div class="podmenu">
+            <h1><a href="">Новости</a></h1>
+          </div>
+          <div class="podmenu">
+            <h1><a href="">Медиа</a></h1>
+          </div>
+          <div class="podmenu">
+            <h1><a href="">События</a></h1>
+          </div>
+          <div class="podmenu">
+            <h1><a href="" class="bigtext">Направления</a></h1>
+          </div>
+          <div class="podmenu">
+            <h1><a href="">Команды</a></h1>
+          </div>
+          <div class="podmenu">
+            <h1><a href="">О Клубе</a></h1>
+          </div>
+        </div>
+          <div class="podmenu">
+            <h1><a href=""> </a></h1>
+          </div>
+          <div class="podmenu">
+            <h1><a href="">Стримы</a></h1>
+          </div>
+          <div class="podmenu">
+            <h1><a href=""> </a></h1>
+          </div>
+          <div class="podmenu">
+            <h1><a href="" class="bigtext">Dota 2</a></h1>
+          </div>
+          <div class="podmenu">
+            <h1><a href="">Dota 2</a></h1>
+          </div>
+          <div class="podmenu">
+            <h1><a href=""> </a></h1>
+          </div>
+          <div class="podmenu">
+            <h1><a href="">  </a></h1>
+          </div>
+          <div class="podmenu">
+            <h1><a href="">  </a></h1>
+          </div>
+          <div class="podmenu">
+            <h1><a href="">Видео</a></h1>
+          </div>
+          <div class="podmenu">
+            <h1><a href=""> </a></h1>
+          </div>
+          <div class="podmenu">
+            <h1><a href="" class="bigtext">CS:GO</a></h1>
+          </div>
+          <div class="podmenu">
+            <h1><a href="">CS:GO</a></h1>
+          </div>
+          <div class="podmenu">
+            <h1><a href="">  </a></h1>
+          </div>
+          <div class="podmenu">
+            <h1><a href="">  </a></h1>
+          </div>
+          <div class="podmenu">
+            <h1><a href="">  </a></h1>
+          </div>
+          <div class="podmenu">
+            <h1><a href="">Фото</a></h1>
+          </div>
+          <div class="podmenu">
+            <h1><a href=""> </a></h1>
+          </div>
+          <div class="podmenu">
+            <h1><a href="" class="bigtext">LOL</a></h1>
+          </div>
+          <div class="podmenu">
+            <h1><a href="">LOL</a></h1>
+          </div>
+          <div class="podmenu">
+            <h1><a href="">  </a></h1>
+          </div>
+      </div>
+      <div class="block-copyright-nav">
+        <div class="block-img"> 
+          <a href=""><img src="../../images/social/vk-social-logotype.png" alt=""></a>
+        </div>
+        <div class="block-img">
+          <a href=""><img src="../../images/social/youtube-logo.png" alt=""></a>
+        </div>
+        <div class="block-img">
+          <a href=""><img src="../../images/social/instagram.png" alt=""></a>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+
+  <script>showSlides(1)</script>
+</body>
+<script>
+  $(document).on("scroll",function(){
+    if($(document).scrollTop()>70){ 
+    $("header").removeClass("large").addClass("small");
+    }
+    else{
+    $("header").removeClass("small").addClass("large");
+    }
+});
+</script>
+</html>
